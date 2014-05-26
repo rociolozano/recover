@@ -1,0 +1,38 @@
+﻿@model EmployeeQuiz.Models.Employe
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/Eindx.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <br>
+    <br>
+    
+    <center>
+    <div class="datos">
+        
+        @using (Html.BeginForm())
+        {
+            <span> Buscar auto por su ID</span>
+            <p><center>@Html.TextBoxFor(m=> m.Id)</center></p>
+            <input type="submit" value="Buscar"/>
+            
+        }
+     
+        
+
+    </div>
+</center>
+    
+    
+        
+</body>
+</html>

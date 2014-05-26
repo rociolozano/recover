@@ -1,0 +1,56 @@
+﻿@model EmployeeQuiz.Models.Employe
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="~/Content/estilo.css" />
+        <meta name="viewport" content="width=device-width" />
+        <title>WorkerView</title>
+</head>
+   
+     <body>
+         
+            
+    <center>
+        
+    <table>
+            <tr>
+            <td><img class="imagen" src="@Url.Content(Model.PhothoPath)" alt ="Sample Image" width="300" height="200"/></td>
+            <b>
+                <td>
+        <p> <b>ID:</b>@Model.Id</p>
+
+        <p> <b>Marca: </b>@Model.FirstLastname</p>
+
+        <p> <b>Modelo: </b>@Model.SecondLastname</p>
+
+        <p> <b>Año: </b>@Model.Name</p>
+
+        <p> <b>Color: </b>@Model.Position</p>
+
+        <p> <b>Placas: </b>@Model.Wage</p>
+              </td>
+            </tr>
+             
+                <tr>
+                 <td><img class="imagen" src="@Url.Content(Model.foto)" alt ="Sample Image" width="300" height="200"/></td>
+                 <td>
+                 <p> <b>Lugar de Estacionamiento: </b>@Model.Sex</p>
+                 <p> <b>Nombre: </b>@Model.Nombre</p>
+                 <p> <b>Sexo:</b>@Model.Sexo</p>
+                 <p> <b>Profesion: </b>@Model.Profesion</p>
+                 </td>
+          </tr>         
+      </table>
+       <a href="~/Home/Index"> <input type="submit" value="Regresar" /></a>
+
+        
+    
+   </center>
+</body>
+</html>
